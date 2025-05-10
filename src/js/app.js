@@ -63,7 +63,7 @@ window.onload = function() {
     twitter: null,
     github: null,
     linkedin: null,
-    instagram: null,
+    instagram: not null,
     name: null,
     lastName: null,
     role: null,
