@@ -48,7 +48,11 @@ function render(variables = {}) {
                 ? "https://github.com/"
                 : "https://github.com/" + variables.github
             }"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="${
+              variables.linkedin === null
+                ? "https://linkedin.com/"
+                : "https://linkedin.com/" + variables.linkedin
+            }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="${
               variables.instagram === null
                 ? "https://instagram.com/"
