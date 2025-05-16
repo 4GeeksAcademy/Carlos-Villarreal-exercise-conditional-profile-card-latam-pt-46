@@ -36,30 +36,24 @@ function render(variables = {}) {
           <h1>${variables.name === null ? "Name" : variables.name} 
           ${variables.lastName === null ? "Last Name" : variables.lastName} 
           </h1>
-          <h2>${variables.role === null ? "role" : variables.role}</h2>
-          <h3> ${
-            variables.country === null ? "country" : variables.country
-          }   ${variables.city} </h3>
+          <h2>${variables.role === null ? "Role" : variables.role}</h2>
+          <h3>${
+            variables.country === null ? "Country" : variables.country
+          }</h3>   
+          <h3>${variables.city === null ? "City" : variables.city}</h3>
           <ul class="${variables.socialMediaPosition}">
           <li><a href="${
-            variables.twitter === null ? "Twitter" : variables.twitter
-          }
-          "><i class="fab fa-twitter"></i></a></li>
+            variables.twitter === null ? "twitter" : variables.twitter
+          }"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="${
+            variables.github === null ? "github" : variables.github
+          }"><i class="fab fa-github"></i></a></li>
             <li><a href="${
-              variables.github === null
-                ? "https://github.com/"
-                : "https://github.com/" + variables.github
-            }"><i class="fab fa-github"></i></a></li>
+              variables.instagram === null ? "instagram" : variables.instagram
+            }"<i class="fab fa-linkedin"></i></a></li>
             <li><a href="${
-              variables.linkedin === null
-                ? "https://linkedin.com/"
-                : "https://linkedin.com/" + variables.linkedin
-            }"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="${
-              variables.instagram === null
-                ? "https://instagram.com/"
-                : "https://instagram.com/" + variables.instagram
-            }><i class="fab fa-instagram"></i></a></li>
+              variables.linkedin === null ? "linkedin" : variables.linkedin
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
