@@ -39,7 +39,7 @@ function render(variables = {}) {
           <h2>${variables.role === null ? "role" : variables.role}</h2>
           <h3> ${
             variables.country === null ? "country" : variables.country
-          }</h3>
+          }   ${variables.city} </h3>
           <ul class="${variables.socialMediaPosition}">
           <li><a href="${
             variables.twitter === null ? "Twitter" : variables.twitter
